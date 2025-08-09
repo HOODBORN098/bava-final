@@ -8,6 +8,10 @@ export const site = {
   glovoNakuru: "https://glovoapp.com/ke/en/nakuru/bava-restaurant-nak/",
   whatsappNumber: "254799963000",
   googleMapsUrl: "https://maps.google.com/?q=Bava+Restaurant+Nakuru",
+  // Chat widgets (set only one: Crisp or Tawk.to)
+  crispWebsiteId: "", // e.g. 1234-abcd-5678-efgh
+  tawkPropertyId: "", // e.g. 64a.../1h... (first segment)
+  tawkWidgetId: "", // e.g. default
 };
 
 export type MenuItem = {

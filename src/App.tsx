@@ -10,6 +10,7 @@ import Reserve from "./pages/Reserve";
 import Catering from "./pages/Catering";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
+import ChatWidget from "@/components/common/ChatWidget";
 
 const queryClient = new QueryClient();
 
@@ -18,6 +19,11 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
+      {/* Global chat widget (Crisp/Tawk) */}
+      {/* It will only load if IDs are set in site config */}
+      {/* eslint-disable-next-line @typescript-eslint/ban-ts-comment */}
+      {/* @ts-ignore - dynamic load */}
+      <ChatWidget />
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
