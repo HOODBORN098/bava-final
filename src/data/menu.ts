@@ -96,4 +96,76 @@ export const sections: { name: string; items: MenuItem[] }[] = [
       { id: "fruit-salad", name: "Fresh Fruit Salad", price: 320, category: "Desserts", photo: "dessert-icecream.jpg" },
     ],
   },
+  {
+    name: "Breakfast Combos",
+    items: [
+      { id: "bf-combo-english", name: "English Breakfast Combo", description: "Eggs, sausage, toast, fries + tea/coffee.", price: 820, category: "Breakfast" },
+      { id: "bf-combo-omelette", name: "Omelette Combo", description: "Masala omelette, toast + tea/coffee.", price: 650, category: "Breakfast" },
+      { id: "bf-combo-pancakes", name: "Pancakes Combo", description: "2 pancakes, syrup + tea/coffee.", price: 600, category: "Breakfast" },
+    ],
+  },
+  {
+    name: "Croissants",
+    items: [
+      { id: "croissant-butter", name: "Butter Croissant", price: 250, category: "Breakfast" },
+      { id: "croissant-chocolate", name: "Chocolate Croissant", price: 300, category: "Breakfast" },
+      { id: "croissant-cheese", name: "Cheese Croissant", price: 320, category: "Breakfast" },
+    ],
+  },
+  {
+    name: "Pancakes",
+    items: [
+      { id: "pancakes-plain", name: "Plain Pancakes", price: 350, category: "Breakfast" },
+      { id: "pancakes-banana", name: "Banana Pancakes", price: 380, category: "Breakfast" },
+      { id: "pancakes-blueberry", name: "Blueberry Pancakes", price: 420, category: "Breakfast" },
+    ],
+  },
+  {
+    name: "Egg Specials",
+    items: [
+      { id: "eggs-two", name: "Two Eggs Any Style", price: 250, category: "Breakfast" },
+      { id: "eggs-cheese-omelette", name: "Cheese Omelette", price: 380, category: "Breakfast" },
+      { id: "eggs-bhurji", name: "Egg Bhurji", price: 380, category: "Breakfast" },
+    ],
+  },
+  {
+    name: "Waffles",
+    items: [
+      { id: "waffles-classic", name: "Classic Waffles", price: 450, category: "Breakfast" },
+      { id: "waffles-chocolate", name: "Chocolate Waffles", price: 500, category: "Breakfast" },
+      { id: "waffles-strawberry", name: "Strawberry Waffles", price: 520, category: "Breakfast" },
+    ],
+  },
+  {
+    name: "Kiddie Breakfast",
+    items: [
+      { id: "kids-pancakes", name: "Kids Pancakes", price: 280, category: "Breakfast" },
+      { id: "kids-omelette", name: "Kids Omelette", price: 300, category: "Breakfast" },
+      { id: "kids-sausage-fries", name: "Kids Sausage & Fries", price: 350, category: "Breakfast" },
+    ],
+  },
+  {
+    name: "Pilau & Specials",
+    items: [
+      { id: "pilau-special", name: "Special Pilau", description: "Special pilau rice with a blend of spices.", price: 720, category: "Rice" },
+      { id: "pilau-chicken", name: "Chicken Pilau", price: 680, category: "Rice" },
+    ],
+  },
+  {
+    name: "Biryani & Stews",
+    items: [
+      { id: "biryani-lamb", name: "Lamb Biryani", price: 850, category: "Rice" },
+      { id: "stew-chicken", name: "Chicken Stew", description: "Chicken on bone, boiled then fried and served in a stew.", price: 700, category: "Local" },
+      { id: "stew-beef", name: "Beef Stew", price: 700, category: "Local" },
+    ],
+  },
+  {
+    name: "Hot Drinks",
+    items: [
+      { id: "drink-tea-masala", name: "Masala Tea", price: 200, category: "Drinks" },
+      { id: "drink-coffee", name: "Black Coffee", price: 200, category: "Drinks" },
+      { id: "drink-cappuccino", name: "Cappuccino", price: 300, category: "Drinks" },
+      { id: "drink-latte", name: "Cafe Latte", price: 320, category: "Drinks" },
+    ],
+  },
 ];
