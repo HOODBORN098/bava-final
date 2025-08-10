@@ -14,7 +14,10 @@ export const Locations = () => {
             <article key={l.title} className="rounded-lg border p-5">
               <h3 className="text-lg font-semibold">{l.title}</h3>
               <p className="text-sm text-muted-foreground mt-1">{l.address}</p>
-              <a className="mt-2 inline-block underline" href={`tel:${l.phone}`}>{l.phone}</a>
+              <div className="mt-2 flex items-center gap-3">
+                <a className="underline" href={`tel:${l.phone}`}>{l.phone}</a>
+                <a className="underline" href={`https://wa.me/${site.whatsappNumber}`} target="_blank" rel="noopener">WhatsApp</a>
+              </div>
             </article>
           ))}
         </div>

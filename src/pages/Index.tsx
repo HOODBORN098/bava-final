@@ -8,6 +8,9 @@ import { Gallery } from "@/components/blocks/Gallery";
 import { Reviews } from "@/components/blocks/Reviews";
 import { Locations } from "@/components/blocks/Locations";
 import { CTASection } from "@/components/blocks/CTASection";
+import { Services } from "@/components/blocks/Services";
+import { AboutOverview } from "@/components/blocks/AboutOverview";
+import { LocationsMap } from "@/components/blocks/LocationsMap";
 import { Seo } from "@/components/common/Seo";
 import { site } from "@/config/site";
 
@@ -33,11 +36,14 @@ const Index = () => {
       <main>
         <Hero />
         <QuickActions />
+        <Services />
         <MenuPreview />
         <SpecialsStrip />
+        <AboutOverview />
         <Gallery />
         <Reviews />
         <Locations />
+        <LocationsMap />
         <CTASection />
       </main>
       <Footer />

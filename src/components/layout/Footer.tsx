@@ -9,6 +9,7 @@ export const Footer = () => {
           <h3 className="text-lg font-bold">{site.name}</h3>
           <p className="text-sm text-muted-foreground mt-2">{site.address}</p>
           <p className="text-sm text-muted-foreground mt-1">Phone: <a className="underline" href={`tel:${site.phoneNakuru}`}>{site.phoneNakuru}</a></p>
+          <p className="text-sm text-muted-foreground mt-1"><a className="underline" href={`https://wa.me/${site.whatsappNumber}`} target="_blank" rel="noopener">WhatsApp us</a></p>
         </div>
         <nav className="grid gap-2">
           <Link className="text-sm hover:text-primary" to="/menu">Menu</Link>

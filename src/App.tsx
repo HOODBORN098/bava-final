@@ -11,6 +11,7 @@ import Catering from "./pages/Catering";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import ChatWidget from "@/components/common/ChatWidget";
+import FloatingWhatsApp from "@/components/common/FloatingWhatsApp";
 
 const queryClient = new QueryClient();
 
@@ -24,6 +25,7 @@ const App = () => (
       {/* eslint-disable-next-line @typescript-eslint/ban-ts-comment */}
       {/* @ts-ignore - dynamic load */}
       <ChatWidget />
+      <FloatingWhatsApp />
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
