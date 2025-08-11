@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
-import { Bike, Calendar, UtensilsCrossed, MessageCircle } from "lucide-react";
+import { Bike, Calendar, UtensilsCrossed } from "lucide-react";
+import { SiWhatsapp } from "react-icons/si";
 import { site } from "@/config/site";
 
 export const QuickActions = () => {
@@ -7,7 +8,7 @@ export const QuickActions = () => {
     { label: "Order on Glovo", href: site.glovoNakuru, icon: Bike },
     { label: "Reserve a Table", href: "/reserve", icon: Calendar },
     { label: "Catering Enquiry", href: "/catering", icon: UtensilsCrossed },
-    { label: "WhatsApp Order", href: `https://wa.me/${site.whatsappNumber}`, icon: MessageCircle },
+    { label: "WhatsApp Order", href: `https://wa.me/${site.whatsappNumber}`, icon: SiWhatsapp },
   ];
   return (
     <section className="py-6">
