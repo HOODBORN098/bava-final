@@ -48,14 +48,14 @@ export const ChatWidget = () => {
         type="button"
         onClick={() => setOpen((v) => !v)}
         aria-label="Open chat"
-        className="fixed bottom-5 right-20 z-50 inline-flex items-center gap-2 rounded-full bg-primary text-primary-foreground shadow-lg px-4 py-3 ring-1 ring-primary/20 hover:bg-primary/90 transition-colors"
+        className="fixed bottom-5 left-5 sm:left-auto sm:right-24 z-50 inline-flex items-center gap-2 rounded-full bg-primary text-primary-foreground shadow-lg px-4 py-3 ring-1 ring-primary/20 hover:bg-primary/90 transition-colors"
       >
         <MessageCircle className="size-5" />
         <span className="hidden sm:inline">Chat</span>
       </button>
 
       {open && (
-        <div className="fixed bottom-20 right-5 z-50 w-80 rounded-lg border bg-card text-card-foreground shadow-lg">
+        <div className="fixed bottom-24 left-5 sm:left-auto sm:right-24 z-50 w-80 rounded-lg border bg-card text-card-foreground shadow-lg">
           <div className="flex items-center justify-between p-3 border-b">
             <p className="text-sm font-semibold">Chat with Bava</p>
             <button aria-label="Close chat" onClick={() => setOpen(false)} className="p-1 rounded-md hover:bg-accent/20">
