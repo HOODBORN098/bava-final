@@ -11,7 +11,7 @@ export const Locations = () => {
         <h2 className="text-2xl md:text-3xl font-bold">Locations</h2>
         <div className="mt-6 grid gap-4 md:grid-cols-2">
           {locations.map((l) => (
-            <article key={l.title} className="rounded-lg border p-5">
+            <article key={l.title} className="rounded-lg border p-5 transition-transform duration-200 hover:scale-[1.01] hover:shadow-md motion-reduce:transition-none motion-reduce:hover:scale-100">
               <h3 className="text-lg font-semibold">{l.title}</h3>
               <p className="text-sm text-muted-foreground mt-1">{l.address}</p>
               <div className="mt-2 flex items-center gap-3">
