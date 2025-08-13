@@ -12,9 +12,7 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import ChatWidget from "@/components/common/ChatWidget";
 import FloatingWhatsApp from "@/components/common/FloatingWhatsApp";
-import NavigationBar from "./components/NavigationBar";
 import MenuSection from "./components/MenuSection";
-import BottomNav from "./components/BottomNav";
 import './theme/lavish.css';
 
 const queryClient = new QueryClient();
@@ -32,7 +30,6 @@ function App() {
         <ChatWidget />
         <FloatingWhatsApp />
         <BrowserRouter>
-          <NavigationBar />
           <Routes>
             <Route path="/" element={<Index />} />
             <Route path="/menu" element={<Menu />} />
@@ -45,7 +42,9 @@ function App() {
           </Routes>
         </BrowserRouter>
         <MenuSection />
-        <BottomNav />
+        {/* Remove or comment out navigation bars */}
+        {/* <BottomNav /> */}
+        {/* <NavigationBar /> */}
       </TooltipProvider>
     </QueryClientProvider>
   );
