@@ -5,7 +5,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0.75em 0;
+  flex-wrap: wrap;
+  padding: 0.5em 0;
   position: sticky;
   top: 0;
   z-index: 100;
@@ -14,8 +15,8 @@
 .nav-link {
   color: #222;
   text-decoration: none;
-  margin: 0 1.5em;
-  font-size: 1.1em;
+  margin: 0 1em;
+  font-size: 1em;
   font-family: 'Inter', sans-serif;
   font-weight: 500;
   display: flex;
@@ -97,4 +98,11 @@
 
 .dropdown-item:last-child {
   margin-bottom: 0;
+}
+
+@media (max-width: 600px) {
+  .nav-link {
+    font-size: 0.95em;
+    margin: 0 0.5em;
+  }
 }

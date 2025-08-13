@@ -14,6 +14,7 @@ import ChatWidget from "@/components/common/ChatWidget";
 import FloatingWhatsApp from "@/components/common/FloatingWhatsApp";
 import NavigationBar from "./components/NavigationBar";
 import MenuSection from "./components/MenuSection";
+import BottomNav from "./components/BottomNav";
 import './theme/lavish.css';
 
 const queryClient = new QueryClient();
@@ -44,6 +45,7 @@ function App() {
           </Routes>
         </BrowserRouter>
         <MenuSection />
+        <BottomNav />
       </TooltipProvider>
     </QueryClientProvider>
   );
